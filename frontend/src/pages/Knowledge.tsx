@@ -3,7 +3,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, Sprout, Droplets, Bug, Wrench } from "lucide-react";
+import { BookOpen, Sprout, Droplets, Bug, Wrench, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Knowledge = () => {
   const navigate = useNavigate();
@@ -12,6 +13,8 @@ const Knowledge = () => {
     {
       icon: Sprout,
       title: "作物種植",
+      description: "從選種到收成的完整栽培技術",
+      color: "from-green-500 to-emerald-600",
       articles: [
         { id: "1", title: "水稻種植完整指南" },
         { id: "2", title: "蔬菜栽培技術" },
@@ -22,6 +25,8 @@ const Knowledge = () => {
     {
       icon: Droplets,
       title: "灌溉與施肥",
+      description: "水資源管理與土壤改良技術",
+      color: "from-blue-500 to-cyan-600",
       articles: [
         { id: "5", title: "智慧灌溉系統介紹" },
         { id: "6", title: "有機肥料使用指南" },
@@ -32,6 +37,8 @@ const Knowledge = () => {
     {
       icon: Bug,
       title: "病蟲害防治",
+      description: "識別與防治作物病蟲害",
+      color: "from-red-500 to-orange-600",
       articles: [
         { id: "9", title: "常見病蟲害識別" },
         { id: "10", title: "生物防治技術" },
@@ -42,6 +49,8 @@ const Knowledge = () => {
     {
       icon: Wrench,
       title: "農機工具教學",
+      description: "農機操作、保養與選購指南",
+      color: "from-gray-600 to-slate-700",
       articles: [
         { id: "13", title: "常見農機具介紹" },
         { id: "14", title: "農機安全操作教學" },
@@ -52,45 +61,69 @@ const Knowledge = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
       <Header />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h1 className="text-4xl font-bold mb-4">知識庫</h1>
-              <p className="text-lg text-muted-foreground">
-                農業知識與實用技術資源中心
+          <div className="max-w-7xl mx-auto">
+            {/* 頁面標題區 */}
+            <div className="text-center mb-16">
+              <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
+                農業知識庫
+              </h1>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                探索農業技術資源，從栽培到管理，從理論到實務
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* 分類卡片 */}
+            <div className="grid md:grid-cols-2 gap-8">
               {categories.map((category, index) => {
                 const Icon = category.icon;
                 return (
-                  <Card key={index} className="hover:shadow-lg transition-shadow">
-                    <CardHeader>
-                      <div className="flex items-center gap-3 mb-2">
-                        <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                          <Icon className="w-6 h-6 text-primary" />
+                  <Card 
+                    key={index} 
+                    className="hover:shadow-2xl transition-all duration-300 border-0 overflow-hidden group"
+                  >
+                    {/* 卡片頭部 - 漸層背景 */}
+                    <div className={`bg-gradient-to-r ${category.color} p-6 text-white relative overflow-hidden`}>
+                      <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
+                      <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
+                      
+                      <div className="relative flex items-start gap-4">
+                        <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center flex-shrink-0">
+                          <Icon className="w-7 h-7 text-white" />
                         </div>
-                        <CardTitle className="text-base">{category.title}</CardTitle>
+                        <div className="flex-1">
+                          <CardTitle className="text-2xl font-bold text-white mb-2">
+                            {category.title}
+                          </CardTitle>
+                          <p className="text-white/90 text-sm">
+                            {category.description}
+                          </p>
+                        </div>
                       </div>
-                    </CardHeader>
-                    <CardContent>
-                      <ul className="space-y-3">
+                    </div>
+
+                    {/* 卡片內容 - 文章列表 */}
+                    <CardContent className="p-6 bg-white">
+                      <div className="space-y-2">
                         {category.articles.map((article) => (
-                          <li key={article.id}>
-                            <button
-                              onClick={() => navigate(`/knowledge/${article.id}`)}
-                              className="text-foreground/80 hover:text-primary transition-colors flex items-center gap-2 text-left w-full text-sm"
-                            >
-                              <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                              {article.title}
-                            </button>
-                          </li>
+                          <button
+                            key={article.id}
+                            onClick={() => navigate(`/knowledge/${article.id}`)}
+                            className="w-full text-left p-4 rounded-lg hover:bg-green-50 transition-all duration-200 flex items-center justify-between group/item border border-transparent hover:border-green-200"
+                          >
+                            <div className="flex items-center gap-3 flex-1">
+                              <div className="w-2 h-2 rounded-full bg-gradient-to-r from-green-400 to-emerald-600 group-hover/item:scale-150 transition-transform"></div>
+                              <span className="text-foreground group-hover/item:text-green-600 font-medium transition-colors">
+                                {article.title}
+                              </span>
+                            </div>
+                            <ArrowRight className="w-4 h-4 text-muted-foreground group-hover/item:text-green-600 group-hover/item:translate-x-1 transition-all" />
+                          </button>
                         ))}
-                      </ul>
+                      </div>
                     </CardContent>
                   </Card>
                 );
