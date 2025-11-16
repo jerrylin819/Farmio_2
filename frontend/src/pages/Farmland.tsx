@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom"; // ✅ 新增
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -10,6 +11,7 @@ import RentLandModal from "@/components/RentLandModal";
 
 const Farmland = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const navigate = useNavigate(); // ✅ 新增
 
   const farmlands = [
     {
@@ -36,7 +38,7 @@ const Farmland = () => {
       location: "苗栗縣三義鄉",
       area: 1200,
       price: 25000,
-      status: "可租用",
+      status: "已租用",
       image: "https://images.unsplash.com/photo-1560493676-04071c5f467b?w=400&h=300&fit=crop"
     },
     {
@@ -70,7 +72,6 @@ const Farmland = () => {
                 </p>
               </div>
               
-              {/* 我要出租按鈕 */}
               <Button 
                 size="lg"
                 onClick={() => setIsModalOpen(true)}
@@ -107,16 +108,19 @@ const Farmland = () => {
                         {land.location}
                       </div>
                       <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <TrendingUp className="w-4 h-4" />
                         {land.area} 坪
                       </div>
                       <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                        NT$ {land.price.toLocaleString()}/月
+                        <Droplets className="w-4 h-4" />
+                        NT$ {land.price.toLocaleString()} /月
                       </div>
                     </div>
 
                     <Button 
                       className="w-full" 
                       disabled={land.status === "已租用"}
+                      onClick={() => navigate(`/farmland/${land.id}`)} // ✅ 加入跳轉
                     >
                       {land.status === "可租用" ? "查看詳情" : "已租出"}
                     </Button>
@@ -128,7 +132,6 @@ const Farmland = () => {
         </div>
       </main>
       
-      {/* 彈出視窗元件 */}
       <RentLandModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}

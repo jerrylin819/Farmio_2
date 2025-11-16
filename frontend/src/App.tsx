@@ -9,6 +9,7 @@ import ForumPost from "./pages/ForumPost";
 import Knowledge from "./pages/Knowledge";
 import Member from "./pages/Member";
 import Farmland from "./pages/Farmland";
+import FarmlandDetail from "./pages/FarmlandDetail"; // ✅ 新增
 import AIAssistant from "./pages/AIAssistant";
 import Training from "./pages/Training";
 import Enterprise from "./pages/Enterprise";
@@ -29,11 +30,11 @@ const App = () => (
           <Route path="/knowledge" element={<Knowledge />} />
           <Route path="/member" element={<Member />} />
           <Route path="/farmland" element={<Farmland />} />
+          <Route path="/farmland/:id" element={<FarmlandDetail />} /> {/* ✅ 新增 */}
           <Route path="/lease" element={<Farmland />} />
           <Route path="/ai-assistant" element={<AIAssistant />} />
           <Route path="/training" element={<Training />} />
           <Route path="/enterprise" element={<Enterprise />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
