@@ -16,9 +16,8 @@ const Farmland = () => {
       id: 1,
       name: "宜蘭礁溪優質農地",
       location: "宜蘭縣礁溪鄉",
-      area: "500平方公尺",
-      price: "NT$ 15,000/月",
-      features: ["水源充足", "交通便利", "有機認證"],
+      area: 500,
+      price: 15000,
       status: "可租用",
       image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=300&fit=crop"
     },
@@ -26,9 +25,8 @@ const Farmland = () => {
       id: 2,
       name: "台中后里平地農場",
       location: "台中市后里區",
-      area: "800平方公尺",
-      price: "NT$ 20,000/月",
-      features: ["平坦地形", "灌溉系統", "停車空間"],
+      area: 800,
+      price: 20000,
       status: "可租用",
       image: "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=400&h=300&fit=crop"
     },
@@ -36,19 +34,17 @@ const Farmland = () => {
       id: 3,
       name: "苗栗三義山坡農地",
       location: "苗栗縣三義鄉",
-      area: "1200平方公尺",
-      price: "NT$ 25,000/月",
-      features: ["視野良好", "空氣清新", "果樹種植"],
-      status: "已租用",
+      area: 1200,
+      price: 25000,
+      status: "可租用",
       image: "https://images.unsplash.com/photo-1560493676-04071c5f467b?w=400&h=300&fit=crop"
     },
     {
       id: 4,
       name: "花蓮壽豐有機農場",
       location: "花蓮縣壽豐鄉",
-      area: "600平方公尺",
-      price: "NT$ 18,000/月",
-      features: ["有機認證", "無污染", "專業輔導"],
+      area: 600,
+      price: 18000,
       status: "可租用",
       image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400&h=300&fit=crop"
     }
@@ -111,21 +107,11 @@ const Farmland = () => {
                         {land.location}
                       </div>
                       <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <TrendingUp className="w-4 h-4" />
-                        面積：{land.area}
+                        {land.area} 坪
                       </div>
                       <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <Droplets className="w-4 h-4" />
-                        租金：{land.price}
+                        NT$ {land.price.toLocaleString()}/月
                       </div>
-                    </div>
-                    
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {land.features.map((feature, idx) => (
-                        <Badge key={idx} variant="outline">
-                          {feature}
-                        </Badge>
-                      ))}
                     </div>
 
                     <Button 
