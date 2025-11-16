@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, Sprout, Droplets, Bug } from "lucide-react";
+import { BookOpen, Sprout, Droplets, Bug, Wrench } from "lucide-react";
 
 const Knowledge = () => {
   const navigate = useNavigate();
@@ -38,6 +38,16 @@ const Knowledge = () => {
         { id: "11", title: "農藥安全使用" },
         { id: "12", title: "預防性管理策略" }
       ]
+    },
+    {
+      icon: Wrench,
+      title: "農機工具教學",
+      articles: [
+        { id: "13", title: "常見農機具介紹" },
+        { id: "14", title: "農機安全操作教學" },
+        { id: "15", title: "日常保養與維修技巧" },
+        { id: "16", title: "如何依作物選擇合適農機" }
+      ]
     }
   ];
 
@@ -54,7 +64,7 @@ const Knowledge = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {categories.map((category, index) => {
                 const Icon = category.icon;
                 return (
@@ -64,7 +74,7 @@ const Knowledge = () => {
                         <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                           <Icon className="w-6 h-6 text-primary" />
                         </div>
-                        <CardTitle>{category.title}</CardTitle>
+                        <CardTitle className="text-base">{category.title}</CardTitle>
                       </div>
                     </CardHeader>
                     <CardContent>
@@ -73,7 +83,7 @@ const Knowledge = () => {
                           <li key={article.id}>
                             <button
                               onClick={() => navigate(`/knowledge/${article.id}`)}
-                              className="text-foreground/80 hover:text-primary transition-colors flex items-center gap-2 text-left w-full"
+                              className="text-foreground/80 hover:text-primary transition-colors flex items-center gap-2 text-left w-full text-sm"
                             >
                               <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
                               {article.title}

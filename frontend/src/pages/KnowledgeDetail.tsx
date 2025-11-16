@@ -2787,6 +2787,1841 @@ const KnowledgeDetail = () => {
             </ul>
           </div>
         );
+      case "13":
+        return (
+          <div className="space-y-6 text-foreground">
+            <h2 className="text-2xl font-bold">一、耕耘機具</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">1. 曳引機（拖拉機）</h3>
+            <div className="space-y-2">
+              <p><strong>功能</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>主要動力來源</li>
+                <li>拖曳各種農具作業</li>
+                <li>適合大面積農地</li>
+              </ul>
+
+              <p><strong>規格選擇</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>小型：20-40 馬力，適合 1-3 公頃</li>
+                <li>中型：40-80 馬力，適合 3-10 公頃</li>
+                <li>大型：80 馬力以上，適合 10 公頃以上</li>
+              </ul>
+
+              <p><strong>價格範圍</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>小型：60-120 萬元</li>
+                <li>中型：120-250 萬元</li>
+                <li>大型：250 萬元以上</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">2. 中耕機（耕耘機）</h3>
+            <div className="space-y-2">
+              <p><strong>功能</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>翻土、碎土、整地</li>
+                <li>適合小面積農地</li>
+                <li>操作靈活，轉彎方便</li>
+              </ul>
+
+              <p><strong>類型</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>手扶式：5-10 馬力，適合小型農地</li>
+                <li>乘坐式：12-20 馬力，適合中型農地</li>
+              </ul>
+
+              <p><strong>價格範圍</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>手扶式：3-8 萬元</li>
+                <li>乘坐式：15-30 萬元</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">3. 犁</h3>
+            <div className="space-y-2">
+              <p><strong>類型</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>鏵式犁：深耕用，可達 30-40 公分</li>
+                <li>圓盤犁：適合硬質土壤</li>
+                <li>旋耕犁：翻土碎土一次完成</li>
+              </ul>
+
+              <p><strong>價格範圍</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>2-10 萬元（依大小、類型）</li>
+              </ul>
+            </div>
+
+            <h2 className="text-2xl font-bold mt-8">二、播種與移植機具</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">1. 播種機</h3>
+            <div className="space-y-2">
+              <p><strong>類型</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>條播機：適合穀類、豆類</li>
+                <li>穴播機：適合玉米、花生</li>
+                <li>精密播種機：適合蔬菜種子</li>
+              </ul>
+
+              <p><strong>功能</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>均勻播種</li>
+                <li>控制株距、行距</li>
+                <li>省時省力</li>
+                <li>提高發芽率</li>
+              </ul>
+
+              <p><strong>價格範圍</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>手推式：5000-3 萬元</li>
+                <li>機械式：5-20 萬元</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">2. 插秧機</h3>
+            <div className="space-y-2">
+              <p><strong>類型</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>手扶式：適合小型水田</li>
+                <li>乘坐式：適合大型水田，效率高</li>
+              </ul>
+
+              <p><strong>規格</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>4 行式、6 行式、8 行式</li>
+                <li>行數越多，效率越高</li>
+              </ul>
+
+              <p><strong>價格範圍</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>手扶式：15-30 萬元</li>
+                <li>乘坐式：50-150 萬元</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">3. 移植機</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>適用：蔬菜、花卉育苗移植</li>
+              <li>功能：自動挖穴、放苗、覆土、澆水</li>
+              <li>價格：5-30 萬元</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold mt-8">三、施肥與噴灑機具</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">1. 施肥機</h3>
+            <div className="space-y-2">
+              <p><strong>類型</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>撒肥機：均勻撒布固體肥料</li>
+                <li>條施機：開溝施肥同時進行</li>
+                <li>液肥機：噴灑液態肥料</li>
+              </ul>
+
+              <p><strong>價格範圍</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>手推式：5000-2 萬元</li>
+                <li>動力式：3-15 萬元</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">2. 噴霧機</h3>
+            <div className="space-y-2">
+              <p><strong>類型</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>背負式：人力背負，適合小面積</li>
+                <li>推車式：推車操作，適合中面積</li>
+                <li>動力噴霧機：效率高，適合大面積</li>
+                <li>無人機：空中噴灑，新興技術</li>
+              </ul>
+
+              <p><strong>價格範圍</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>背負式：3000-1 萬元</li>
+                <li>推車式：1-5 萬元</li>
+                <li>動力式：5-20 萬元</li>
+                <li>無人機：30-200 萬元</li>
+              </ul>
+            </div>
+
+            <h2 className="text-2xl font-bold mt-8">四、收穫機具</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">1. 聯合收穫機</h3>
+            <div className="space-y-2">
+              <p><strong>功能</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>收割、脫粒、清選一次完成</li>
+                <li>適用：水稻、小麥、玉米、大豆</li>
+              </ul>
+
+              <p><strong>類型</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>自走式：效率最高</li>
+                <li>半喂入式：適合小型水田</li>
+                <li>全喂入式：適合大型農地</li>
+              </ul>
+
+              <p><strong>價格範圍</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>小型：200-400 萬元</li>
+                <li>大型：400-1000 萬元</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">2. 採收機</h3>
+            <div className="space-y-2">
+              <p><strong>蔬菜採收機</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>適用：高麗菜、花椰菜、萵苣</li>
+                <li>功能：割取、輸送</li>
+                <li>價格：20-100 萬元</li>
+              </ul>
+
+              <p><strong>果實採收機</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>適用：葡萄、藍莓等</li>
+                <li>功能：震動採收、輸送</li>
+                <li>價格：50-300 萬元</li>
+              </ul>
+
+              <p><strong>根莖採收機</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>適用：馬鈴薯、地瓜、花生</li>
+                <li>功能：挖掘、篩選、輸送</li>
+                <li>價格：30-150 萬元</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">3. 割草機</h3>
+            <div className="space-y-2">
+              <p><strong>類型</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>手持式：小面積、修邊</li>
+                <li>推式：中面積草坪</li>
+                <li>乘坐式：大面積草坪</li>
+                <li>側掛式：果園、茶園除草</li>
+              </ul>
+
+              <p><strong>價格範圍</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>手持式：3000-2 萬元</li>
+                <li>推式：1-5 萬元</li>
+                <li>乘坐式：10-50 萬元</li>
+              </ul>
+            </div>
+
+            <h2 className="text-2xl font-bold mt-8">五、灌溉機具</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">1. 抽水機（水泵）</h3>
+            <div className="space-y-2">
+              <p><strong>類型</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>離心泵：適合清水</li>
+                <li>自吸泵：可抽取較深水源</li>
+                <li>潛水泵：水中作業</li>
+                <li>污水泵：抽取污水、泥水</li>
+              </ul>
+
+              <p><strong>動力</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>電動：需電源，安靜</li>
+                <li>汽油引擎：移動方便</li>
+                <li>柴油引擎：馬力大，省油</li>
+              </ul>
+
+              <p><strong>價格範圍</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>小型：5000-3 萬元</li>
+                <li>中型：3-10 萬元</li>
+                <li>大型：10-50 萬元</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">2. 噴灌設備</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>固定式噴頭：適合長期作物</li>
+              <li>移動式噴灌：適合大面積</li>
+              <li>中心旋轉式：適合圓形田區</li>
+              <li>價格：5 萬-數百萬元（依規模）</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold mt-8">六、運搬機具</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">1. 搬運車</h3>
+            <div className="space-y-2">
+              <p><strong>類型</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>手推車：小量搬運</li>
+                <li>動力搬運車：適合山坡地</li>
+                <li>履帶式：適合泥濘地</li>
+              </ul>
+
+              <p><strong>價格範圍</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>手推車：1000-5000 元</li>
+                <li>動力搬運車：5-20 萬元</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">2. 農用搬運機</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>小型貨車：適合農路運輸</li>
+              <li>拖車：配合曳引機使用</li>
+              <li>堆高機：倉儲搬運</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold mt-8">七、烘乾與加工機具</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">1. 烘乾機</h3>
+            <div className="space-y-2">
+              <p><strong>類型</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>靜置式：批次烘乾</li>
+                <li>循環式：連續烘乾</li>
+                <li>流動式：大量烘乾</li>
+              </ul>
+
+              <p><strong>熱源</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>電熱：成本高，溫控精準</li>
+                <li>瓦斯：成本中等</li>
+                <li>柴油：成本低，大量烘乾</li>
+                <li>生質燃料：環保節能</li>
+              </ul>
+
+              <p><strong>價格範圍</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>小型：10-50 萬元</li>
+                <li>中型：50-200 萬元</li>
+                <li>大型：200 萬元以上</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">2. 碾米機</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>功能：去殼、碾白、拋光</li>
+              <li>類型：小型（家用）、中型（碾米廠）</li>
+              <li>價格：3-100 萬元</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">3. 分級篩選機</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>功能：依大小、重量分級</li>
+              <li>適用：果實、穀物、根莖類</li>
+              <li>價格：5-50 萬元</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold mt-8">八、購買建議</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">評估需求</h3>
+            <ol className="list-decimal pl-6 space-y-2">
+              <li>農地面積：選擇適當規格</li>
+              <li>作物種類：不同作物需求不同</li>
+              <li>使用頻率：高頻使用選品質好的</li>
+              <li>預算考量：量力而為</li>
+              <li>人力配置：操作人員技術</li>
+            </ol>
+
+            <h3 className="text-xl font-semibold mt-4">購買管道</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>農機行：有保固、維修服務</li>
+              <li>農會：可申請補助</li>
+              <li>二手市場：價格較低</li>
+              <li>共享共用：租賃或合購</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">政府補助</h3>
+            <div className="space-y-2">
+              <p><strong>補助項目</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>小型農機補助：最高 1/3</li>
+                <li>大型農機貸款：低利貸款</li>
+                <li>節能農機：加碼補助</li>
+                <li>青年農民：優惠方案</li>
+              </ul>
+
+              <p><strong>申請管道</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>農糧署</li>
+                <li>各地農會</li>
+                <li>農業改良場</li>
+              </ul>
+            </div>
+          </div>
+        );
+
+      case "14":
+        return (
+          <div className="space-y-6 text-foreground">
+            <h2 className="text-2xl font-bold">一、農機安全的重要性</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">農機事故統計</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>農機事故佔農業職災比例最高</li>
+              <li>常見事故：翻覆、捲入、撞擊</li>
+              <li>多數事故可透過正確操作避免</li>
+              <li>安全意識與防護措施很重要</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">安全操作的效益</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>保護人身安全</li>
+              <li>延長機具壽命</li>
+              <li>提高作業效率</li>
+              <li>降低維修成本</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold mt-8">二、操作前檢查</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">日常檢查項目</h3>
+            
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-semibold">引擎系統</h4>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>機油量：檢查油尺，不足時補充</li>
+                  <li>冷卻水：確認水箱水位</li>
+                  <li>燃油：檢查油量，加油時注意安全</li>
+                  <li>皮帶：檢查鬆緊度、有無龜裂</li>
+                  <li>空氣濾清器：清潔或更換</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">液壓系統</h4>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>液壓油：檢查油位、顏色</li>
+                  <li>油管：檢查有無漏油、龜裂</li>
+                  <li>接頭：確認接頭緊固</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">傳動系統</h4>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>輪胎：檢查胎壓、磨損</li>
+                  <li>履帶：檢查鬆緊、損壞</li>
+                  <li>鏈條：檢查鬆緊、潤滑</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">安全裝置</h4>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>剎車：測試煞車功能</li>
+                  <li>燈光：確認前後燈正常</li>
+                  <li>喇叭：測試警示功能</li>
+                  <li>防護罩：確認安裝完整</li>
+                  <li>安全帶：檢查有無損壞</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">檢查清單</h3>
+            <div className="space-y-2">
+              <p>建議製作檢查表，每日記錄：</p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>✓ 機油</li>
+                <li>✓ 冷卻水</li>
+                <li>✓ 燃油</li>
+                <li>✓ 輪胎胎壓</li>
+                <li>✓ 剎車功能</li>
+                <li>✓ 燈光喇叭</li>
+                <li>✓ 安全裝置</li>
+              </ul>
+            </div>
+
+            <h2 className="text-2xl font-bold mt-8">三、個人防護裝備</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">必備防護裝備</h3>
+            
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-semibold">1. 安全帽</h4>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>防止頭部撞擊</li>
+                  <li>選擇符合標準的安全帽</li>
+                  <li>正確配戴、繫緊下巴帶</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">2. 防護眼鏡</h4>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>防止異物飛濺</li>
+                  <li>防塵、防風</li>
+                  <li>選擇防霧、抗刮款式</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">3. 口罩</h4>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>防塵口罩：一般作業</li>
+                  <li>活性碳口罩：噴藥作業</li>
+                  <li>定期更換</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">4. 工作服</h4>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>合身、不易勾纏</li>
+                  <li>長袖長褲</li>
+                  <li>鮮艷顏色，增加能見度</li>
+                  <li>避免穿拖鞋、涼鞋</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">5. 手套</h4>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>防護手部</li>
+                  <li>增加握持力</li>
+                  <li>選擇合適材質</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">6. 安全鞋</h4>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>鋼頭鞋：防止壓傷</li>
+                  <li>防滑鞋底</li>
+                  <li>高筒保護腳踝</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">7. 耳塞/耳罩</h4>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>長時間作業必須配戴</li>
+                  <li>防止聽力損傷</li>
+                  <li>降低噪音干擾</li>
+                </ul>
+              </div>
+            </div>
+
+            <h2 className="text-2xl font-bold mt-8">四、安全操作原則</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">啟動前準備</h3>
+            <ol className="list-decimal pl-6 space-y-2">
+              <li>確認周圍無人、無障礙物</li>
+              <li>坐上駕駛座，調整座椅</li>
+              <li>繫好安全帶</li>
+              <li>檢查儀表板</li>
+              <li>確認檔位在空檔</li>
+              <li>鳴喇叭警示</li>
+            </ol>
+
+            <h3 className="text-xl font-semibold mt-4">行駛注意事項</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li><strong>速度控制</strong>：依路況調整，不超速</li>
+              <li><strong>轉彎減速</strong>：提前減速，小心翻覆</li>
+              <li><strong>上下坡</strong>：
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>上坡：低速檔，保持動力</li>
+                  <li>下坡：低速檔，利用引擎煞車</li>
+                  <li>嚴禁空檔滑行</li>
+                </ul>
+              </li>
+              <li><strong>避免側傾</strong>：斜坡行駛時注意重心</li>
+              <li><strong>保持視線</strong>：注意前方、兩側</li>
+              <li><strong>避免急煞</strong>：提前減速</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">作業安全</h3>
+            <div className="space-y-2">
+              <p><strong>耕耘作業</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>注意地下障礙物</li>
+                <li>保持直線行駛</li>
+                <li>轉彎時提起農具</li>
+                <li>避免倒退時農具入土</li>
+              </ul>
+
+              <p><strong>播種作業</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>保持勻速前進</li>
+                <li>注意種子箱餘量</li>
+                <li>定期檢查排種</li>
+              </ul>
+
+              <p><strong>噴藥作業</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>穿戴完整防護裝備</li>
+                <li>注意風向</li>
+                <li>避免藥液飛散</li>
+                <li>作業後立即清洗</li>
+              </ul>
+
+              <p><strong>收穫作業</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>注意刀片、滾筒危險區</li>
+                <li>保持安全距離</li>
+                <li>清理堵塞時關閉引擎</li>
+                <li>避免穿寬鬆衣物</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">停車注意事項</h3>
+            <ol className="list-decimal pl-6 space-y-2">
+              <li>選擇平坦地面</li>
+              <li>農具降至地面</li>
+              <li>拉起手煞車</li>
+              <li>關閉引擎、拔下鑰匙</li>
+              <li>陡坡停車加墊木塊</li>
+            </ol>
+
+            <h2 className="text-2xl font-bold mt-8">五、特殊作業安全</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">斜坡作業</h3>
+            <div className="space-y-2">
+              <p><strong>安全原則</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>坡度 &gt; 15度應避免作業</li>
+                <li>上下坡行駛，不橫向</li>
+                <li>低速檔作業</li>
+                <li>保持重心平衡</li>
+                <li>配備防翻滾架（ROPS）</li>
+              </ul>
+
+              <p><strong>禁止事項</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>禁止橫向行駛</li>
+                <li>禁止急轉彎</li>
+                <li>禁止高速行駛</li>
+                <li>禁止邊坡停車</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">公路行駛</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>遵守交通規則</li>
+              <li>開啟警示燈</li>
+              <li>避開尖峰時段</li>
+              <li>靠右行駛</li>
+              <li>注意車輛寬度</li>
+              <li>農具提高、固定</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">夜間作業</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>確保照明充足</li>
+              <li>穿著反光背心</li>
+              <li>注意視線死角</li>
+              <li>降低作業速度</li>
+              <li>避免疲勞作業</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold mt-8">六、緊急應變</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">引擎故障</h3>
+            <ol className="list-decimal pl-6 space-y-2">
+              <li>立即關閉引擎</li>
+              <li>拉起手煞車</li>
+              <li>農具降至地面</li>
+              <li>設置警示標誌</li>
+              <li>聯絡維修人員</li>
+            </ol>
+
+            <h3 className="text-xl font-semibold mt-4">機具翻覆</h3>
+            <div className="space-y-2">
+              <p><strong>預防措施</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>避免斜坡急轉</li>
+                <li>降低重心</li>
+                <li>配備防翻滾架</li>
+                <li>繫好安全帶</li>
+              </ul>
+
+              <p><strong>發生翻覆時</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>緊握方向盤</li>
+                <li>身體靠向座椅</li>
+                <li>不要跳車</li>
+                <li>等待機具停穩再離開</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">火災</h3>
+            <ol className="list-decimal pl-6 space-y-2">
+              <li>立即關閉引擎、斷電</li>
+              <li>使用滅火器撲滅</li>
+              <li>火勢過大立即撤離</li>
+              <li>撥打 119 報警</li>
+              <li>通知周圍人員避難</li>
+            </ol>
+
+            <h3 className="text-xl font-semibold mt-4">人員受傷</h3>
+            <ol className="list-decimal pl-6 space-y-2">
+              <li>立即停止作業</li>
+              <li>關閉機具電源</li>
+              <li>檢查傷勢</li>
+              <li>簡單急救處理</li>
+              <li>撥打 119 求援</li>
+              <li>保護現場</li>
+            </ol>
+
+            <h2 className="text-2xl font-bold mt-8">七、禁止事項</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">絕對禁止</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>❌ 酒後駕駛</li>
+              <li>❌ 疲勞駕駛</li>
+              <li>❌ 無照操作</li>
+              <li>❌ 超載運送</li>
+              <li>❌ 搭載乘客（非設計座位）</li>
+              <li>❌ 引擎運轉時加油</li>
+              <li>❌ 引擎運轉時清理堵塞</li>
+              <li>❌ 未關閉電源進行維修</li>
+              <li>❌ 將手伸入運轉中的機件</li>
+              <li>❌ 跳上跳下移動中的機具</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold mt-8">八、安全訓練與證照</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">農機操作訓練</h3>
+            <div className="space-y-2">
+              <p><strong>訓練管道</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>農業改良場</li>
+                <li>農會推廣單位</li>
+                <li>職業訓練中心</li>
+                <li>農機廠商</li>
+              </ul>
+
+              <p><strong>訓練內容</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>機具構造認識</li>
+                <li>操作技巧</li>
+                <li>安全規範</li>
+                <li>保養維修</li>
+                <li>故障排除</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">相關證照</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>農業機械操作證</li>
+              <li>堆高機操作證</li>
+              <li>挖土機操作證</li>
+              <li>施藥人員訓練證明</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold mt-8">九、安全文化建立</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">個人責任</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>重視安全，不抱僥倖</li>
+              <li>遵守操作規範</li>
+              <li>穿戴防護裝備</li>
+              <li>定期保養維護</li>
+              <li>持續學習進修</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">團隊安全</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>建立安全作業流程</li>
+              <li>定期安全會議</li>
+              <li>事故經驗分享</li>
+              <li>相互提醒、監督</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">風險評估</h3>
+            <ol className="list-decimal pl-6 space-y-2">
+              <li>作業前評估風險</li>
+              <li>識別危險因子</li>
+              <li>擬定預防措施</li>
+              <li>準備應變計畫</li>
+              <li>作業後檢討改善</li>
+            </ol>
+          </div>
+        );
+
+      case "15":
+        return (
+          <div className="space-y-6 text-foreground">
+            <h2 className="text-2xl font-bold">一、保養的重要性</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">為什麼要保養</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li><strong>延長使用壽命</strong>：定期保養可延長機具 2-3 倍壽命</li>
+              <li><strong>降低故障率</strong>：預防性維護減少突發故障</li>
+              <li><strong>提高效率</strong>：保持最佳作業狀態</li>
+              <li><strong>節省成本</strong>：小額保養避免大修</li>
+              <li><strong>確保安全</strong>：減少意外事故</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">保養vs修理</h3>
+            <div className="space-y-2">
+              <p><strong>保養（預防）</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>定期進行</li>
+                <li>費用較低</li>
+                <li>避免故障</li>
+                <li>計畫性進行</li>
+              </ul>
+
+              <p><strong>修理（事後）</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>故障後進行</li>
+                <li>費用較高</li>
+                <li>影響作業</li>
+                <li>突發性</li>
+              </ul>
+            </div>
+
+            <h2 className="text-2xl font-bold mt-8">二、日常保養</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">每日檢查保養</h3>
+            
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-semibold">1. 清潔</h4>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li><strong>外部清潔</strong>：
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>清除泥土、雜草</li>
+                      <li>用水沖洗（避開電氣部分）</li>
+                      <li>擦乾水分</li>
+                    </ul>
+                  </li>
+                  <li><strong>引擎清潔</strong>：
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>清除散熱片灰塵</li>
+                      <li>清潔空氣濾清器</li>
+                    </ul>
+                  </li>
+                  <li><strong>工作部件清潔</strong>：
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>清除刀片雜物</li>
+                      <li>清理輸送帶</li>
+                      <li>清潔滾筒</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">2. 檢查</h4>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>機油量</li>
+                  <li>冷卻水位</li>
+                  <li>燃油量</li>
+                  <li>輪胎氣壓</li>
+                  <li>螺絲鬆緊</li>
+                  <li>皮帶鬆緊</li>
+                  <li>有無漏油、漏水</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">3. 潤滑</h4>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>檢查潤滑油脂</li>
+                  <li>補充潤滑點</li>
+                  <li>轉動部位加油</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">每週保養</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>清洗空氣濾清器</li>
+              <li>檢查電瓶液面</li>
+              <li>檢查燈光、喇叭</li>
+              <li>緊固鬆動螺絲</li>
+              <li>檢查剎車功能</li>
+              <li>潤滑鏈條、軸承</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold mt-8">三、定期保養</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">每50小時保養</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>更換機油</li>
+              <li>清洗或更換機油濾芯</li>
+              <li>檢查空氣濾清器</li>
+              <li>檢查燃油濾清器</li>
+              <li>檢查皮帶鬆緊、磨損</li>
+              <li>檢查液壓油</li>
+              <li>潤滑各接點</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">每100小時保養</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>更換空氣濾清器</li>
+              <li>更換燃油濾清器</li>
+              <li>檢查電瓶狀況</li>
+              <li>檢查冷卻系統</li>
+              <li>檢查剎車片磨損</li>
+              <li>調整皮帶鬆緊</li>
+              <li>檢查輪胎磨損</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">每250小時保養</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>更換液壓油</li>
+              <li>更換液壓濾芯</li>
+              <li>更換齒輪油</li>
+              <li>檢查噴油嘴</li>
+              <li>調整氣門間隙</li>
+              <li>檢查發電機</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">每年保養（季末保養）</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>全面檢查維修</li>
+              <li>更換磨損零件</li>
+              <li>清潔燃油系統</li>
+              <li>檢查電氣系統</li>
+              <li>防鏽處理</li>
+              <li>長期保存準備</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold mt-8">四、各系統保養</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">引擎系統</h3>
+            
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-semibold">1. 機油更換</h4>
+                <p><strong>步驟</strong></p>
+                <ol className="list-decimal pl-6 space-y-1">
+                  <li>暖車 5-10 分鐘</li>
+                  <li>熄火，等待 5 分鐘</li>
+                  <li>拆下放油螺絲</li>
+                  <li>放盡舊油</li>
+                  <li>安裝放油螺絲</li>
+                  <li>加入新機油至刻度</li>
+                  <li>啟動引擎檢查</li>
+                </ol>
+
+                <p><strong>注意事項</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>使用原廠或同等級機油</li>
+                  <li>不可混用不同品牌</li>
+                  <li>注意機油黏度等級</li>
+                  <li>舊油妥善回收</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">2. 空氣濾清器</h4>
+                <p><strong>清潔方法</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>紙質濾芯：輕拍震動灰塵</li>
+                  <li>海綿濾芯：清水洗淨晾乾</li>
+                  <li>油浴式：更換機油</li>
+                </ul>
+
+                <p><strong>更換時機</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>灰塵環境：每 50 小時</li>
+                  <li>一般環境：每 100 小時</li>
+                  <li>破損立即更換</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">3. 冷卻系統</h4>
+                <p><strong>保養要點</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>每日檢查水位</li>
+                  <li>使用乾淨冷卻水</li>
+                  <li>清潔散熱片</li>
+                  <li>檢查水管有無龜裂</li>
+                  <li>冬季使用不凍液</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">液壓系統</h3>
+            <div className="space-y-2">
+              <p><strong>液壓油更換</strong></p>
+              <ol className="list-decimal pl-6 space-y-1">
+                <li>放盡舊油</li>
+                <li>清洗油箱</li>
+                <li>更換濾芯</li>
+                <li>加入新液壓油</li>
+                <li>排除空氣</li>
+              </ol>
+
+              <p><strong>注意事項</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>使用指定規格液壓油</li>
+                <li>保持清潔，避免雜質</li>
+                <li>定期檢查油管</li>
+                <li>注意油溫不可過高</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">傳動系統</h3>
+            <div className="space-y-2">
+              <p><strong>皮帶保養</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>檢查鬆緊度（壓下 1-2 公分）</li>
+                <li>檢查有無龜裂、磨損</li>
+                <li>調整張力</li>
+                <li>磨損嚴重立即更換</li>
+              </ul>
+
+              <p><strong>鏈條保養</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>定期清潔、潤滑</li>
+                <li>檢查鬆緊度</li>
+                <li>檢查有無斷裂</li>
+                <li>磨損超過限度更換</li>
+              </ul>
+
+              <p><strong>輪胎保養</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>保持正確胎壓</li>
+                <li>檢查磨損、龜裂</li>
+                <li>避免尖銳物刺穿</li>
+                <li>長期停放墊高避壓</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">電氣系統</h3>
+            <div className="space-y-2">
+              <p><strong>電瓶保養</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>保持端子清潔</li>
+                <li>檢查液面高度</li>
+                <li>檢查充電狀況</li>
+                <li>長期不用須充電保養</li>
+              </ul>
+
+              <p><strong>電線檢查</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>檢查有無破損</li>
+                <li>檢查接頭鬆動</li>
+                <li>避免鼠咬</li>
+                <li>保持乾燥</li>
+              </ul>
+            </div>
+
+            <h2 className="text-2xl font-bold mt-8">五、季節性保養</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">春季（使用前）</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>全面檢查各系統</li>
+              <li>更換機油、濾芯</li>
+              <li>檢查電瓶、充電</li>
+              <li>潤滑各部位</li>
+              <li>試運轉</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">秋季（使用後）</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>徹底清潔</li>
+              <li>更換機油</li>
+              <li>排空冷卻水或加不凍液</li>
+              <li>電瓶拆下保存</li>
+              <li>輪胎充氣、墊高</li>
+              <li>防鏽處理</li>
+              <li>覆蓋防塵罩</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold mt-8">六、常見故障與排除</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">引擎故障</h3>
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-semibold">1. 無法啟動</h4>
+                <p><strong>可能原因</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>燃油用完</li>
+                  <li>電瓶沒電</li>
+                  <li>啟動馬達故障</li>
+                  <li>燃油管路堵塞</li>
+                </ul>
+
+                <p><strong>排除方法</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>加油</li>
+                  <li>充電或更換電瓶</li>
+                  <li>檢修啟動馬達</li>
+                  <li>清潔燃油濾清器</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">2. 引擎過熱</h4>
+                                <p><strong>可能原因</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>冷卻水不足</li>
+                  <li>散熱片堵塞</li>
+                  <li>皮帶鬆脫</li>
+                  <li>機油不足</li>
+                  <li>負荷過重</li>
+                </ul>
+
+                <p><strong>排除方法</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>補充冷卻水</li>
+                  <li>清潔散熱片</li>
+                  <li>調整或更換皮帶</li>
+                  <li>補充機油</li>
+                  <li>降低負荷</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">3. 冒黑煙</h4>
+                <p><strong>可能原因</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>空氣濾清器堵塞</li>
+                  <li>噴油嘴故障</li>
+                  <li>燃油品質不良</li>
+                </ul>
+
+                <p><strong>排除方法</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>清洗或更換空氣濾清器</li>
+                  <li>清洗或更換噴油嘴</li>
+                  <li>更換優質燃油</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">液壓系統故障</h3>
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-semibold">1. 升降無力</h4>
+                <p><strong>可能原因</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>液壓油不足</li>
+                  <li>油泵磨損</li>
+                  <li>油管漏油</li>
+                  <li>閥門故障</li>
+                </ul>
+
+                <p><strong>排除方法</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>補充液壓油</li>
+                  <li>更換油泵</li>
+                  <li>修補或更換油管</li>
+                  <li>清洗或更換閥門</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">2. 動作緩慢</h4>
+                <p><strong>可能原因</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>液壓油黏度過高</li>
+                  <li>濾芯堵塞</li>
+                  <li>油路有空氣</li>
+                </ul>
+
+                <p><strong>排除方法</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>更換適當黏度液壓油</li>
+                  <li>更換濾芯</li>
+                  <li>排除空氣</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">電氣系統故障</h3>
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-semibold">1. 燈光不亮</h4>
+                <p><strong>檢查順序</strong></p>
+                <ol className="list-decimal pl-6 space-y-1">
+                  <li>檢查燈泡</li>
+                  <li>檢查保險絲</li>
+                  <li>檢查開關</li>
+                  <li>檢查線路</li>
+                </ol>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">2. 電瓶充電不良</h4>
+                <p><strong>可能原因</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>發電機故障</li>
+                  <li>皮帶鬆脫</li>
+                  <li>電瓶老化</li>
+                  <li>線路接觸不良</li>
+                </ul>
+              </div>
+            </div>
+
+            <h2 className="text-2xl font-bold mt-8">七、保養工具與耗材</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">基本工具</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li><strong>手工具</strong>：
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>扳手組（開口、梅花、套筒）</li>
+                  <li>螺絲起子組</li>
+                  <li>鉗子（尖嘴、斜口、萬用）</li>
+                  <li>錘子</li>
+                  <li>六角扳手組</li>
+                </ul>
+              </li>
+              <li><strong>測量工具</strong>：
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>輪胎氣壓表</li>
+                  <li>機油尺</li>
+                  <li>游標卡尺</li>
+                  <li>三用電表</li>
+                </ul>
+              </li>
+              <li><strong>輔助工具</strong>：
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>千斤頂</li>
+                  <li>油桶</li>
+                  <li>漏斗</li>
+                  <li>手電筒</li>
+                  <li>抹布</li>
+                </ul>
+              </li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">常備耗材</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>機油（引擎、齒輪、液壓）</li>
+              <li>濾芯（機油、空氣、燃油、液壓）</li>
+              <li>黃油（潤滑脂）</li>
+              <li>冷卻水或不凍液</li>
+              <li>清潔劑、除鏽劑</li>
+              <li>螺絲、墊片</li>
+              <li>電工膠帶</li>
+              <li>保險絲</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold mt-8">八、保養記錄管理</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">記錄的重要性</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>追蹤保養歷程</li>
+              <li>掌握使用狀況</li>
+              <li>預測零件壽命</li>
+              <li>計算使用成本</li>
+              <li>申請保固依據</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">記錄內容</h3>
+            <div className="space-y-2">
+              <p><strong>基本資料</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>機具型號</li>
+                <li>購買日期</li>
+                <li>使用時數</li>
+              </ul>
+
+              <p><strong>保養記錄</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>日期</li>
+                <li>使用時數</li>
+                <li>保養項目</li>
+                <li>更換零件</li>
+                <li>費用</li>
+                <li>保養人員</li>
+              </ul>
+
+              <p><strong>故障記錄</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>故障現象</li>
+                <li>故障原因</li>
+                <li>處理方法</li>
+                <li>更換零件</li>
+                <li>預防措施</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">保養計畫表</h3>
+            <div className="space-y-2">
+              <p>建議製作保養計畫表，標示各項保養時程：</p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>每日保養項目</li>
+                <li>每週保養項目</li>
+                <li>定期保養項目（依小時數）</li>
+                <li>季節性保養項目</li>
+                <li>提醒保養時間</li>
+              </ul>
+            </div>
+
+            <h2 className="text-2xl font-bold mt-8">九、專業維修服務</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">何時需要專業維修</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>重大故障：引擎、變速箱、液壓系統</li>
+              <li>需要專業設備：引擎大修、軸承更換</li>
+              <li>電子系統：電腦診斷、電路檢修</li>
+              <li>保固期內：送原廠或指定維修站</li>
+              <li>安全相關：煞車、轉向系統</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">選擇維修廠</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>原廠授權：保固、零件齊全</li>
+              <li>口碑良好：詢問其他農友</li>
+              <li>距離考量：就近維修方便</li>
+              <li>價格合理：多方比較</li>
+              <li>技術專業：有證照、經驗豐富</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">維修注意事項</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>詳細說明故障狀況</li>
+              <li>索取維修報價單</li>
+              <li>確認更換零件</li>
+              <li>保留維修單據</li>
+              <li>測試功能正常</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold mt-8">十、長期保存</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">保存前準備</h3>
+            <ol className="list-decimal pl-6 space-y-2">
+              <li><strong>徹底清潔</strong>：清除所有泥土、雜草</li>
+              <li><strong>檢查維修</strong>：修復所有故障</li>
+              <li><strong>更換機油</strong>：新油防止腐蝕</li>
+              <li><strong>排空或加滿燃油</strong>：避免水氣凝結</li>
+              <li><strong>冷卻系統</strong>：排空水或加不凍液</li>
+              <li><strong>電瓶拆下</strong>：另外保存、定期充電</li>
+              <li><strong>輪胎處理</strong>：充氣、墊高避壓</li>
+              <li><strong>防鏽處理</strong>：金屬表面塗防鏽油</li>
+              <li><strong>潤滑保養</strong>：所有潤滑點加油</li>
+            </ol>
+
+            <h3 className="text-xl font-semibold mt-4">保存環境</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li><strong>室內保存</strong>：最理想，避風避雨</li>
+              <li><strong>遮棚保存</strong>：有遮蔽，通風良好</li>
+              <li><strong>室外保存</strong>：使用防水罩覆蓋</li>
+              <li><strong>避免潮濕</strong>：防止鏽蝕</li>
+              <li><strong>避免日曬</strong>：防止橡膠老化</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">保存期間維護</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>每月啟動一次（5-10 分鐘）</li>
+              <li>檢查有無漏油、漏水</li>
+              <li>檢查鼠害</li>
+              <li>電瓶定期充電</li>
+              <li>輪胎定期轉動</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">使用前檢查</h3>
+            <ol className="list-decimal pl-6 space-y-2">
+              <li>全面檢查各系統</li>
+              <li>補充各種油液</li>
+              <li>安裝電瓶</li>
+              <li>檢查輪胎氣壓</li>
+              <li>潤滑各部位</li>
+              <li>試運轉測試</li>
+            </ol>
+          </div>
+        );
+
+      case "16":
+        return (
+          <div className="space-y-6 text-foreground">
+            <h2 className="text-2xl font-bold">一、農機選擇的重要性</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">為什麼要正確選擇</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li><strong>提高效率</strong>：適合的農機大幅提升作業效率</li>
+              <li><strong>降低成本</strong>：避免購買不適用機具</li>
+              <li><strong>保證品質</strong>：正確作業確保作物品質</li>
+              <li><strong>減輕勞力</strong>：機械化減少體力負擔</li>
+              <li><strong>擴大規模</strong>：機械化才能擴大經營</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">選擇錯誤的後果</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>機具閒置浪費</li>
+              <li>作業效果不佳</li>
+              <li>增加故障率</li>
+              <li>維修成本高</li>
+              <li>影響作物產量</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold mt-8">二、選擇考量因素</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">1. 農地條件</h3>
+            
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-semibold">面積大小</h4>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li><strong>小面積（&lt; 1 公頃）</strong>：
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>手扶式中耕機</li>
+                      <li>小型噴霧機</li>
+                      <li>手推式播種機</li>
+                      <li>人力工具為主</li>
+                    </ul>
+                  </li>
+                  <li><strong>中面積（1-5 公頃）</strong>：
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>小型曳引機（20-40 HP）</li>
+                      <li>乘坐式中耕機</li>
+                      <li>動力噴霧機</li>
+                      <li>小型插秧機</li>
+                    </ul>
+                  </li>
+                  <li><strong>大面積（&gt; 5 公頃）</strong>：
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>中大型曳引機（&gt; 40 HP）</li>
+                      <li>聯合收穫機</li>
+                      <li>大型播種機</li>
+                      <li>自走式噴霧機</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">地形地勢</h4>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li><strong>平地</strong>：各種農機均適用</li>
+                  <li><strong>坡地（&lt; 15度）</strong>：
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>選用履帶式</li>
+                      <li>低重心設計</li>
+                      <li>配備防翻滾架</li>
+                    </ul>
+                  </li>
+                  <li><strong>山坡地（&gt; 15度）</strong>：
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>履帶式搬運車</li>
+                      <li>纜線吊掛系統</li>
+                      <li>單軌運輸車</li>
+                      <li>避免大型機械</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">土壤狀況</h4>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li><strong>黏土</strong>：需大馬力、重型機具</li>
+                  <li><strong>砂土</strong>：輕型機具即可</li>
+                  <li><strong>礫石地</strong>：選用強化型刀片、輪胎</li>
+                  <li><strong>濕地</strong>：履帶式、寬輪胎</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">田區規劃</h4>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li><strong>大區塊</strong>：大型機械效率高</li>
+                  <li><strong>小區塊、不規則</strong>：小型靈活機具</li>
+                  <li><strong>道路寬度</strong>：考慮機具通行</li>
+                  <li><strong>儲存空間</strong>：考慮停放場所</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">2. 作物種類</h3>
+            
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-semibold">水稻</h4>
+                <p><strong>必要農機</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>曳引機或中耕機：整地</li>
+                  <li>插秧機：機械插秧</li>
+                  <li>聯合收穫機：收割脫粒</li>
+                  <li>烘乾機：降低含水率</li>
+                </ul>
+
+                <p><strong>選擇重點</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>插秧機：依面積選擇行數</li>
+                  <li>收穫機：半喂入或全喂入</li>
+                  <li>烘乾機：依產量選擇容量</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">蔬菜類</h4>
+                <p><strong>葉菜類（小白菜、青江菜）</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>中耕機：整地、作畦</li>
+                  <li>播種機：條播或撒播</li>
+                  <li>噴霧機：施肥、噴藥</li>
+                  <li>採收機：部分可機械採收</li>
+                </ul>
+
+                <p><strong>果菜類（番茄、小黃瓜）</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>整地機：作畦、覆膜</li>
+                  <li>移植機：育苗移植</li>
+                  <li>滴灌設備：精準灌溉</li>
+                  <li>噴霧機：病蟲害防治</li>
+                </ul>
+
+                <p><strong>根莖類（蘿蔔、馬鈴薯）</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>開溝機：作畦開溝</li>
+                  <li>播種機：精準播種</li>
+                  <li>培土機：培土作業</li>
+                  <li>挖掘機：收穫採收</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">果樹類</h4>
+                <p><strong>必要農機</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>中耕機或曳引機：除草、翻耕</li>
+                  <li>噴霧機：病蟲害防治（需高壓）</li>
+                  <li>割草機：草生栽培管理</li>
+                  <li>搬運車：果實搬運</li>
+                </ul>
+
+                <p><strong>選擇重點</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>噴霧機：需高壓、大容量</li>
+                  <li>割草機：側掛式較適合</li>
+                  <li>搬運車：適合坡地履帶式</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">雜糧類（玉米、大豆）</h4>
+                <p><strong>必要農機</strong></p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>曳引機：大面積整地</li>
+                  <li>播種機：穴播或條播</li>
+                  <li>中耕培土機：除草培土</li>
+                  <li>聯合收穫機：收穫脫粒</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">3. 經營規模</h3>
+            
+            <div className="space-y-2">
+              <p><strong>自營農場</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>購買常用機具</li>
+                <li>選擇耐用機種</li>
+                <li>考慮多功能機具</li>
+                <li>建立完整機組</li>
+              </ul>
+
+              <p><strong>代耕業者</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>選擇高效率機種</li>
+                <li>考慮作業速度</li>
+                <li>維修便利性重要</li>
+                <li>耐用度為首要考量</li>
+              </ul>
+
+              <p><strong>小農兼業</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>租賃或共享</li>
+                <li>購買基本機具</li>
+                <li>委託代耕服務</li>
+                <li>避免大型機具</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">4. 預算考量</h3>
+            
+            <div className="space-y-2">
+              <p><strong>購置成本</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>機具本體價格</li>
+                <li>配件費用</li>
+                <li>運輸安裝費用</li>
+                <li>政府補助額度</li>
+              </ul>
+
+              <p><strong>使用成本</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>燃料費用</li>
+                <li>保養維修費</li>
+                <li>零件更換費</li>
+                <li>折舊攤提</li>
+              </ul>
+
+              <p><strong>成本效益分析</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>年使用時數</li>
+                <li>作業面積</li>
+                <li>節省人力成本</li>
+                <li>回收年限</li>
+              </ul>
+            </div>
+
+            <h2 className="text-2xl font-bold mt-8">三、不同作物的農機配置</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">水稻栽培（1公頃）</h3>
+            <div className="space-y-2">
+              <p><strong>基本配置</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>小型曳引機（30 HP）：50-80 萬元</li>
+                <li>犁、旋耕機：5-10 萬元</li>
+                <li>6行插秧機：80-120 萬元</li>
+                <li>背負式噴霧機：1-2 萬元</li>
+                <li>委託收穫、烘乾</li>
+                <li>總投資：約 150-220 萬元</li>
+              </ul>
+
+              <p><strong>完整配置（加上）</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>聯合收穫機：300-500 萬元</li>
+                <li>烘乾機：50-100 萬元</li>
+                <li>總投資：約 500-820 萬元</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">設施蔬菜（0.5公頃）</h3>
+            <div className="space-y-2">
+              <p><strong>基本配置</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>手扶中耕機：5-8 萬元</li>
+                <li>作畦機：3-5 萬元</li>
+                <li>移植機：10-20 萬元</li>
+                <li>滴灌設備：10-15 萬元</li>
+                <li>動力噴霧機：3-8 萬元</li>
+                <li>總投資：約 31-56 萬元</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">果樹栽培（2公頃）</h3>
+            <div className="space-y-2">
+              <p><strong>基本配置</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>小型曳引機：50-80 萬元</li>
+                <li>割草機：3-5 萬元</li>
+                <li>高壓噴霧機：10-20 萬元</li>
+                <li>搬運車：10-20 萬元</li>
+                <li>總投資：約 73-125 萬元</li>
+              </ul>
+            </div>
+
+            <h2 className="text-2xl font-bold mt-8">四、購買方式比較</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">1. 新機購買</h3>
+            <div className="space-y-2">
+              <p><strong>優點</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>性能最佳</li>
+                <li>有保固</li>
+                <li>維修方便</li>
+                <li>可申請補助</li>
+              </ul>
+
+              <p><strong>缺點</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>價格最高</li>
+                <li>折舊快</li>
+              </ul>
+
+              <p><strong>適合對象</strong></p>
+              <p>專業農、代耕業者、大面積經營</p>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">2. 二手購買</h3>
+            <div className="space-y-2">
+              <p><strong>優點</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>價格便宜（新機 30-60%）</li>
+                <li>折舊低</li>
+              </ul>
+
+              <p><strong>缺點</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>無保固</li>
+                <li>維修風險</li>
+                <li>性能不確定</li>
+                <li>零件難找</li>
+              </ul>
+
+              <p><strong>購買注意</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>檢查使用時數</li>
+                <li>試運轉測試</li>
+                <li>確認維修記錄</li>
+                <li>找懂機械的人陪同</li>
+              </ul>
+
+              <p><strong>適合對象</strong></p>
+              <p>小農、預算有限、使用頻率低</p>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">3. 租賃代耕</h3>
+            <div className="space-y-2">
+              <p><strong>優點</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>無需購置</li>
+                <li>無需保養</li>
+                <li>專業操作</li>
+                <li>彈性運用</li>
+              </ul>
+
+              <p><strong>缺點</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>需配合時間</li>
+                <li>長期成本高</li>
+                <li>農忙難預約</li>
+              </ul>
+
+              <p><strong>適合對象</strong></p>
+              <p>兼業農、小面積、臨時需求</p>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">4. 共享共用</h3>
+            <div className="space-y-2">
+              <p><strong>模式</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>多戶合購</li>
+                <li>農會代購</li>
+                <li>產銷班共用</li>
+              </ul>
+
+              <p><strong>優點</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>分攤成本</li>
+                <li>提高使用率</li>
+                <li>減少閒置</li>
+              </ul>
+
+              <p><strong>注意事項</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>訂定使用規範</li>
+                <li>責任歸屬清楚</li>
+                <li>保養責任分擔</li>
+              </ul>
+            </div>
+
+            <h2 className="text-2xl font-bold mt-8">五、政府補助資源</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">小型農機補助</h3>
+            <div className="space-y-2">
+              <p><strong>補助對象</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>實際從事農業者</li>
+                <li>加入農保或農職保</li>
+                <li>有土地或合法使用權</li>
+              </ul>
+
+              <p><strong>補助項目</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>中耕管理機</li>
+                <li>田間搬運機</li>
+                <li>農地搬運車</li>
+                <li>割草機、打草機</li>
+                <li>樹枝粉碎機</li>
+                <li>鏈鋸、電剪</li>
+              </ul>
+
+              <p><strong>補助額度</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>一般農民：購價 1/3，上限 10 萬元</li>
+                <li>青年農民：購價 1/2，上限 12 萬元</li>
+                <li>產銷履歷：購價 1/2，上限 15 萬元</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">大型農機貸款</h3>
+            <div className="space-y-2">
+              <p><strong>貸款條件</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>農業經營規模達一定標準</li>
+                <li>有穩定收入</li>
+                <li>信用良好</li>
+              </ul>
+
+              <p><strong>貸款額度</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>最高 500 萬元</li>
+                <li>利率優惠（1.5-2%）</li>
+                <li>還款期限 5-10 年</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">申請管道</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>農糧署各區分署</li>
+              <li>各地農會推廣部</li>
+              <li>農業改良場</li>
+              <li>線上申請系統</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold mt-8">六、選購檢查要點</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">購買前評估</h3>
+            <ol className="list-decimal pl-6 space-y-2">
+              <li>明確需求：確認作業項目</li>
+              <li>多方比較：至少3家比價</li>
+              <li>現場試機：實際操作測試</li>
+              <li>查詢口碑：詢問使用者</li>
+              <li>評估成本：計算回收期</li>
+            </ol>
+
+            <h3 className="text-xl font-semibold mt-4">檢查項目</h3>
+            <div className="space-y-2">
+              <p><strong>新機</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>檢查外觀完整</li>
+                <li>確認配件齊全</li>
+                <li>測試各項功能</li>
+                <li>確認保固內容</li>
+                <li>索取使用手冊</li>
+              </ul>
+
+              <p><strong>二手機</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>確認使用年份、時數</li>
+                <li>檢查引擎狀況</li>
+                <li>檢查液壓系統</li>
+                <li>試運轉聽聲音</li>
+                <li>檢查有無漏油</li>
+                <li>詢問維修記錄</li>
+                <li>確認零件供應</li>
+              </ul>
+            </div>
+
+            <h3 className="text-xl font-semibold mt-4">簽約注意</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>詳閱合約條款</li>
+              <li>確認保固期限、內容</li>
+              <li>確認維修服務</li>
+              <li>確認零件供應</li>
+              <li>保留所有單據</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold mt-8">七、未來趨勢</h2>
+            
+            <h3 className="text-xl font-semibold mt-4">智慧農機</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>GPS 自動導航</li>
+              <li>無人機應用</li>
+              <li>感測器監控</li>
+              <li>數據分析決策</li>
+              <li>遠端遙控</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">環保節能</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>電動農機</li>
+              <li>太陽能應用</li>
+              <li>低排放引擎</li>
+              <li>省油技術</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mt-4">小型化、輕量化</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>適合小農使用</li>
+              <li>操作更簡便</li>
+              <li>價格更親民</li>
+              <li>維修更容易</li>
+            </ul>
+          </div>
+        );
 
       default:
         return (
@@ -2823,7 +4658,11 @@ const KnowledgeDetail = () => {
     "9": { title: "常見病蟲害識別" },
     "10": { title: "生物防治技術" },
     "11": { title: "農藥安全使用" },
-    "12": { title: "預防性管理策略" }
+    "12": { title: "預防性管理策略" },
+    "13": { title: "常見農機具介紹" },     
+    "14": { title: "農機安全操作教學" },     
+    "15": { title: "日常保養與維修技巧" },      
+    "16": { title: "如何依作物選擇合適農機" }   
   };
 
   const article = id ? articles[id] : undefined;

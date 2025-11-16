@@ -108,11 +108,9 @@ const Farmland = () => {
                         {land.location}
                       </div>
                       <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <TrendingUp className="w-4 h-4" />
                         {land.area} 坪
                       </div>
                       <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <Droplets className="w-4 h-4" />
                         NT$ {land.price.toLocaleString()} /月
                       </div>
                     </div>
