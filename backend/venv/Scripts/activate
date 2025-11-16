@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Github_Project\Farmio\backend\venv"
+VIRTUAL_ENV="C:\Users\jerry\OneDrive\桌面\hackson\Farmio_2\backend\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
