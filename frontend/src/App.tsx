@@ -7,9 +7,10 @@ import Index from "./pages/Index";
 import Forum from "./pages/Forum";
 import ForumPost from "./pages/ForumPost";
 import Knowledge from "./pages/Knowledge";
+import KnowledgeDetail from "./pages/KnowledgeDetail";
 import Member from "./pages/Member";
 import Farmland from "./pages/Farmland";
-import FarmlandDetail from "./pages/FarmlandDetail"; // ✅ 新增
+import FarmlandDetail from "./pages/FarmlandDetail";
 import AIAssistant from "./pages/AIAssistant";
 import Training from "./pages/Training";
 import Enterprise from "./pages/Enterprise";
@@ -28,9 +29,10 @@ const App = () => (
           <Route path="/forum" element={<Forum />} />
           <Route path="/forum/:id" element={<ForumPost />} />
           <Route path="/knowledge" element={<Knowledge />} />
+          <Route path="/knowledge/:id" element={<KnowledgeDetail />} />
           <Route path="/member" element={<Member />} />
           <Route path="/farmland" element={<Farmland />} />
-          <Route path="/farmland/:id" element={<FarmlandDetail />} /> {/* ✅ 新增 */}
+          <Route path="/farmland/:id" element={<FarmlandDetail />} />
           <Route path="/lease" element={<Farmland />} />
           <Route path="/ai-assistant" element={<AIAssistant />} />
           <Route path="/training" element={<Training />} />

@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -5,35 +6,37 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BookOpen, Sprout, Droplets, Bug } from "lucide-react";
 
 const Knowledge = () => {
+  const navigate = useNavigate();
+
   const categories = [
     {
       icon: Sprout,
       title: "作物種植",
       articles: [
-        "水稻種植完整指南",
-        "蔬菜栽培技術",
-        "果樹管理要點",
-        "季節性作物選擇"
+        { id: "1", title: "水稻種植完整指南" },
+        { id: "2", title: "蔬菜栽培技術" },
+        { id: "3", title: "果樹管理要點" },
+        { id: "4", title: "季節性作物選擇" }
       ]
     },
     {
       icon: Droplets,
       title: "灌溉與施肥",
       articles: [
-        "智慧灌溉系統介紹",
-        "有機肥料使用指南",
-        "土壤改良方法",
-        "水資源管理"
+        { id: "5", title: "智慧灌溉系統介紹" },
+        { id: "6", title: "有機肥料使用指南" },
+        { id: "7", title: "土壤改良方法" },
+        { id: "8", title: "水資源管理" }
       ]
     },
     {
       icon: Bug,
       title: "病蟲害防治",
       articles: [
-        "常見病蟲害識別",
-        "生物防治技術",
-        "農藥安全使用",
-        "預防性管理策略"
+        { id: "9", title: "常見病蟲害識別" },
+        { id: "10", title: "生物防治技術" },
+        { id: "11", title: "農藥安全使用" },
+        { id: "12", title: "預防性管理策略" }
       ]
     }
   ];
@@ -45,7 +48,6 @@ const Knowledge = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <BookOpen className="w-16 h-16 mx-auto mb-4 text-primary" />
               <h1 className="text-4xl font-bold mb-4">知識庫</h1>
               <p className="text-lg text-muted-foreground">
                 農業知識與實用技術資源中心
@@ -67,15 +69,15 @@ const Knowledge = () => {
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-3">
-                        {category.articles.map((article, idx) => (
-                          <li key={idx}>
-                            <a
-                              href="#"
-                              className="text-foreground/80 hover:text-primary transition-colors flex items-center gap-2"
+                        {category.articles.map((article) => (
+                          <li key={article.id}>
+                            <button
+                              onClick={() => navigate(`/knowledge/${article.id}`)}
+                              className="text-foreground/80 hover:text-primary transition-colors flex items-center gap-2 text-left w-full"
                             >
-                              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                              {article}
-                            </a>
+                              <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                              {article.title}
+                            </button>
                           </li>
                         ))}
                       </ul>
